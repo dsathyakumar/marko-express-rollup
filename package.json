@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "build-prod": "NODE_ENV=production rollup -c rollup.config.js",
-    "start": "npm run build && node server.js"
+    "start": "npm run build-prod && node server.js"
   },
   "repository": {
     "type": "git",
