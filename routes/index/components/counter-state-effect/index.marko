@@ -1,0 +1,16 @@
+<state|count = 0| />
+
+<mount(() => {
+  let widgetEl = component.getEl("my-root");
+})/>
+
+<effect(() => {
+    console.log(count);
+})/>
+
+<div key="my-root">
+    <span>This button was clicked ${count} times</span>
+    <button class="example-button" onClick(() => count++)>
+        Click me! ${count}
+    </button>
+</div>

@@ -1,3 +1,16 @@
-<button class="example-button">
-    Click me!
-</button>
+class {
+    onCreate() {
+        this.state = {
+            count: 0
+        };
+    }
+    increment() {
+        this.state.count++;
+    }
+}
+<div>
+    <span>This button was clicked ${state.count} times</span>
+    <button class="example-button" on-click('increment')>
+        Click me! ${state.count}
+    </button>
+</div>
